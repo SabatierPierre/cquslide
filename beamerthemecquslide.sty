@@ -1,0 +1,28 @@
+\mode<presentation>
+
+% chinese
+\usepackage{ctex}
+
+\useoutertheme{split}
+\useinnertheme{rectangles}
+\usecolortheme{dove}
+\usecolortheme{whale}
+
+\logo{%
+%\begin{centering}%
+\includegraphics[width=0.15\textwidth]{black-logo}%
+%\end{centering}%
+}
+
+% Faire apparaître un sommaire avant chaque section
+\AtBeginSection[]{
+   \begin{frame}
+   \begin{center}{\Large 目录}\end{center}
+   %%% affiche en début de chaque section, les noms de sections et
+   %%% noms de sous-sections de la section en cours.
+   \tableofcontents[currentsection,hideothersubsections]
+   \end{frame} 
+}
+
+
+\setbeamertemplate{navigation symbols}{}
